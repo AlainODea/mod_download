@@ -1,0 +1,8 @@
+%% Dispatch rules for mod_download
+[
+    {download, ["download",id], resource_download, [ 
+                                        {path, id},
+                                        {use_cache, false},
+                                        {content_disposition, attachment}
+                                    ]}
+].
